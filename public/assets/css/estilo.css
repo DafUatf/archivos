@@ -1,0 +1,17 @@
+.form-control {
+	text-transform: uppercase;
+}
+hr {
+	border: 3px solid #666; 
+	border-radius: 300px/10px; 
+	height: 0px; 
+	text-align: center;
+}
+body{
+	background: black;
+}
+p{
+	border: 1px;
+	box-shadow: transparent;
+	background-clip: unset;
+}
