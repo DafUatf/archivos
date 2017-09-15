@@ -15,3 +15,12 @@ Route::get('pdfcompro', 'PDFController@pdfcomprobante');
 
 
 Route::get('/home', 'HomeController@index');
+
+
+//Existen rutas de tipos post/get/put/patch/delete/options/resource
+
+Route::get('/archivos/{detalle?}',function($detalle="no puso nada"){
+	echo "El nombre que colocaste es:".$detalle;
+});
+
+

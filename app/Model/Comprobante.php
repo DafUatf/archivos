@@ -23,6 +23,11 @@ class Comprobante extends Model
         return $this->hasOne('App\Model\Prestamo');
     }
 
+    //parte del modulo de archivos----------------------------
+    public function archivos(){
+        return $this->hasMany('App\Model\Archivo');
+    }
+//---------------------------------------------------------------
     public function scopeComprobante($query, $cod_archivo){
         //dd("scope:".$cod_archivo);
         if($cod_archivo != ""){
