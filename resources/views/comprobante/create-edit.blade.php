@@ -57,6 +57,9 @@
 		{!! Form::text('fecha_recepcion', null, ['class'=>'form-control', 'placeholder' => 'aaaa-mm-dd', 'id'=>'f-rec']) !!}
 	</div>
 	{!! Form::submit('Registrar', ['class'=>'btn btn-info'])!!}
+<!-- Esta parte es del modulo de archivos el boton-->
+<a href="{{url('archivos')}}" class="btn btn-info btn-add"><span class="glyphicon glyphicon-tasks"></span> Siguiente</a>
+
 	<h1 class="title-pg">
 	<a href="{{route('comprobante.index')}}" class="btn btn-warning"><span class="glyphicon glyphicon-floppy-remove"></span> Cancelar</a>
     </h1>

@@ -7,6 +7,7 @@ Auth::routes();
 Route::resource('/comprobante', 'ComprobanteController');
 Route::resource('/reportecomprobante', 'ReportecomprobanteController');
 Route::resource('/prestamo', 'PrestamoController');
+Route::resource('/archivos', 'ArchivoController');
 Route::resource('/reporteprestamo', 'ReporteprestamoController');
 Route::get('pdf', 'PDFController@pdf');
 Route::get('pdfgeneral', 'PDFController@general');
@@ -17,10 +18,10 @@ Route::get('pdfcompro', 'PDFController@pdfcomprobante');
 Route::get('/home', 'HomeController@index');
 
 
-//Existen rutas de tipos post/get/put/patch/delete/options/resource
+//Existen rutas de tipos post/get/put/patch/delete/options/resource//
 
-Route::get('/archivos/{detalle?}',function($detalle="no puso nada"){
+/*Route::get('/archivos/{detalle}',function($detalle){
 	echo "El nombre que colocaste es:".$detalle;
-});
+});*/
 
 
