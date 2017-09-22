@@ -11,7 +11,7 @@
 	<a href="{{route('prestamo.index')}}"><span class="glyphicon glyphicon-triangle-left ">Volver</span></a>
 	<span class="glyphicon glyphicon-edit"></span> <i><strong> {{$pres->comprobante_cod_archivo or 'Nuevo'}}</strong></i></h1>
 </h1>
-<h4>(*) DATOS OBLICATORIOS</h4>
+<h4>(*) DATOS OBLIGATORIOS</h4>
 @if( isset($errors) && count($errors) > 0)
 <div class="alert alert-danger">
 	@foreach($errors->all() as $error)
